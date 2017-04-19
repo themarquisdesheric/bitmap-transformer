@@ -9,7 +9,10 @@ describe('bitmap header', () => {
     let buffer = null;
     before(() => {
         // TODO: read './test/test-bitmap.bmp' into buffer variable
-
+        return fsp.readFile('./test/test-bitmap.bmp')
+        .then(data => {
+            buffer = data;
+        });
         // HINT: return a promise, this is async!
     });
 
@@ -20,7 +23,7 @@ describe('bitmap header', () => {
         assert.ok(constants.FILE_SIZE_OFFSET);
     });
 
-    it('parses header data', () => {
+    it.only('parses header data', () => {
         // TODO: use the constants to populate the following properties
         // on the BitmapHeader in its constructor
         const header = new BitmapHeader(buffer);
