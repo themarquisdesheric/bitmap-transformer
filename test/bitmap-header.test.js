@@ -1,4 +1,6 @@
 const assert = require('assert');
+const fsp = require('fs-promise');
+
 const constants = require('../lib/bitmap-constants');
 const BitmapHeader = require('../lib/bitmap-header');
 
