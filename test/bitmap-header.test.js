@@ -10,9 +10,9 @@ describe('bitmap header', () => {
     before(() => {
         // TODO: read './test/test-bitmap.bmp' into buffer variable
         return fsp.readFile('./test/test-bitmap.bmp')
-        .then(data => {
-            buffer = data;
-        });
+            .then(data => {
+                buffer = data;
+            });
         // HINT: return a promise, this is async!
     });
 
