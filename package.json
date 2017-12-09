@@ -1,13 +1,12 @@
 {
   "name": "bitmap-transformer",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -20,6 +19,11 @@
   },
   "homepage": "https://github.com/cfpdx-401JS-spring-2017/bitmap-transformer#readme",
   "devDependencies": {
-    "eslint": "^3.19.0"
-  }
+    "eslint": "^3.19.0",
+    "fs-promise": "^2.0.2"
+  },
+  "dependencies": {
+    "mocha": "^3.2.0"
+  },
+  "description": ""
 }
